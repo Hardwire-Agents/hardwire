@@ -1298,6 +1298,7 @@ function buildLlmsTxt(env) {
 > Skip the 1.00% bot-router tax. Wire your agent straight to Pons v2 bonding curves and Uniswap v4 pools.
 
 - Website: https://${domain}
+- GitHub: https://github.com/Hardwire-Agents/hardwire
 - X: https://x.com/${handle}
 - Chain: Robinhood Chain (EVM Chain ID 4663, ~100ms blocks)
 - HardwireRouter Contract: ${router}

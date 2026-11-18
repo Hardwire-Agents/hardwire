@@ -64,6 +64,7 @@ function shell({ active, title, desc, body }) {
         <span class="ca-pill" id="caPill" data-copy="${TOKEN_CA_TEXT.startsWith("0x") ? TOKEN_CA_TEXT : ""}">${
     TOKEN_CA_TEXT.startsWith("0x") ? `CA: ${TOKEN_CA_TEXT.slice(0, 6)}…${TOKEN_CA_TEXT.slice(-4)}` : TOKEN_CA_TEXT
   }</span>
+        <a href="https://github.com/Hardwire-Agents/hardwire" target="_blank" rel="noopener" class="btn">GitHub ↗</a>
         <button class="btn btn-primary" id="connectBtn">Connect Wallet</button>
       </div>
     </div>
@@ -75,6 +76,8 @@ function shell({ active, title, desc, body }) {
       <div style="display:flex;gap:18px;flex-wrap:wrap">
         <span id="barEth">ETH —</span>
         <span id="barFee" style="color:var(--green)">Router Fee: 0.00% (vs 1.00% Bot Routers)</span>
+        <a href="https://github.com/Hardwire-Agents/hardwire" target="_blank" rel="noopener" style="color:var(--cyan)">GitHub ↗</a>
+        <a href="https://repo.sourcify.dev/4663/0x88f251df2012e58a6fcdaec69dc3fa2f6310d808" target="_blank" rel="noopener" style="color:var(--green)">Sourcify ↗</a>
         <a href="https://x.com/${X_HANDLE}" target="_blank" rel="noopener" style="color:var(--accent)">@${X_HANDLE} ↗</a>
       </div>
     </div>
