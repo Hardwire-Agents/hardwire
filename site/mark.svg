@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="108" fill="#FF6B1A"/>
+  <!-- Lower broken middleman rail -->
+  <rect x="76" y="328" width="116" height="44" rx="8" fill="#080A0E"/>
+  <rect x="320" y="328" width="116" height="44" rx="8" fill="#080A0E"/>
+  <!-- Heavy direct jumper bridge -->
+  <path d="M 134 350 L 134 176 L 378 176 L 378 350" fill="none" stroke="#080A0E" stroke-width="56" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- Solder terminal nodes -->
+  <circle cx="134" cy="350" r="42" fill="#080A0E"/>
+  <circle cx="378" cy="350" r="42" fill="#080A0E"/>
+  <circle cx="134" cy="350" r="16" fill="#FF6B1A"/>
+  <circle cx="378" cy="350" r="16" fill="#FF6B1A"/>
+</svg>

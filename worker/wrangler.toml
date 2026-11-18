@@ -1,0 +1,30 @@
+name = "hardwire"
+main = "src/index.js"
+compatibility_date = "2026-11-17"
+workers_dev = true
+
+routes = [
+  { pattern = "hardwireagent.com", custom_domain = true },
+  { pattern = "www.hardwireagent.com", custom_domain = true },
+]
+
+[assets]
+directory = "../site"
+binding = "ASSETS"
+run_worker_first = ["/v1/*", "/mcp", "/rpc", "/llms.txt", "/openapi.json"]
+
+[ai]
+binding = "AI"
+
+[vars]
+CHAIN_ID = "4663"
+RH_RPC_URL = "https://rpc.mainnet.chain.robinhood.com"
+PONS_FACTORY = "0x7eD598BcEf8bd9Edd8C97A195C6d13f40801EC7e"
+UNIVERSAL_ROUTER = "0x8876789976dEcBfCbBbe364623C63652db8C0904"
+HARDWIRE_ROUTER_ADDRESS = "0x88f251df2012e58a6fcdaec69dc3fa2f6310d808"
+HARDWIRE_TOKEN_ADDRESS = ""
+HOLDER_THRESHOLD_HWIRE = "500000"
+PRIORITY_BURN_HWIRE = "25000"
+SITE_DOMAIN = "hardwireagent.com"
+X_HANDLE = "hardwireagent"
+AI_MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast"

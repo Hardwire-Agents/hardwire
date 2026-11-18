@@ -1,0 +1,14 @@
+node_modules/
+.wrangler/
+.dev.vars
+launch.json
+cadence.json
+launch-receipt.json
+.cadence-state.json
+.stop-burn
+brand/render-*.mjs
+brand/demo.mp4
+brand/demo-warmup.mp4
+brand/live-terminal.png
+*.log
+.DS_Store

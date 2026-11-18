@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Remote MCP Server & Agent SDK — HARDWIRE</title>
+  <meta name="description" content="Connect Cursor, Claude Desktop, or custom trading bots to HARDWIRE's Streamable HTTP JSON-RPC 2.0 MCP Server on Robinhood Chain (4663)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Remote MCP Server & Agent SDK — HARDWIRE" />
+  <meta property="og:description" content="Connect Cursor, Claude Desktop, or custom trading bots to HARDWIRE's Streamable HTTP JSON-RPC 2.0 MCP Server on Robinhood Chain (4663)." />
+  <meta property="og:url" content="https://hardwireagent.com/" />
+  <meta property="og:image" content="https://hardwireagent.com/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@hardwireagent" />
+  <meta name="twitter:title" content="Remote MCP Server & Agent SDK — HARDWIRE" />
+  <meta name="twitter:description" content="Connect Cursor, Claude Desktop, or custom trading bots to HARDWIRE's Streamable HTTP JSON-RPC 2.0 MCP Server on Robinhood Chain (4663)." />
+  <meta name="twitter:image" content="https://hardwireagent.com/og-card.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand">
+        <img src="/mark.svg" alt="HARDWIRE" />
+        <span>HARDWIRE</span>
+        <span class="brand-tag">CHAIN 4663</span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="">Copilot & Router</a>
+        <a href="/xray.html" class="">Curve X-Ray</a>
+        <a href="/stocks.html" class="">24/7 Equities</a>
+        <a href="/agents.html" class="active">MCP & Agents</a>
+        <a href="/furnace.html" class="">Zero-Fee & Furnace</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="ca-pill" id="caPill" data-copy="">ANNOUNCING ON @HARDWIREAGENT</span>
+        <button class="btn btn-primary" id="connectBtn">Connect Wallet</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker-bar">
+    <div class="ticker-bar-inner">
+      <div><span class="dot-live"></span><span id="barSession">Robinhood Chain (4663) · ~100ms Blocks · Direct Curve + V4 Execution</span></div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <span id="barEth">ETH —</span>
+        <span id="barFee" style="color:var(--green)">Router Fee: 0.00% (vs 1.00% Bot Routers)</span>
+        <a href="https://x.com/hardwireagent" target="_blank" rel="noopener" style="color:var(--accent)">@hardwireagent ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Remote MCP Gateway · <span>One URL, Your Keys</span></h1>
+        <p>Connect any MCP-compatible AI agent to Robinhood Chain in 10 seconds. Agents audit live curves, resolve 203 stock tokens, and receive verified non-custodial calldata — private keys never touch our server.</p>
+      </div>
+    </section>
+
+    <div class="grid-desk">
+      <div class="panel">
+        <div class="panel-head">
+          <span class="panel-title">Live MCP JSON-RPC 2.0 Playground (POST /mcp)</span>
+          <span class="badge badge-green">5 Live Tools</span>
+        </div>
+        <div class="panel-body">
+          <div class="chips">
+            <button class="chip" data-mcp-tool="hardwire_scan_curves" data-mcp-args='{"phase":"all","limit":4}'>hardwire_scan_curves</button>
+            <button class="chip" data-mcp-tool="hardwire_audit_token" data-mcp-args='{"query":"0x01db7687276EAe013F287edcb904960116462357"}'>hardwire_audit_token</button>
+            <button class="chip" data-mcp-tool="hardwire_quote_and_build_tx" data-mcp-args='{"mode":"directBuy","token":"0x01db7687276EAe013F287edcb904960116462357","ethIn":0.05}'>hardwire_quote_and_build_tx</button>
+            <button class="chip" data-mcp-tool="hardwire_lookup_stock_tokens" data-mcp-args='{"q":"NVDA"}'>hardwire_lookup_stock_tokens</button>
+            <button class="chip" data-mcp-tool="hardwire_router_status" data-mcp-args='{}'>hardwire_router_status</button>
+          </div>
+          <pre class="codeblock" id="mcpOutput" style="max-height:420px">Click any MCP tool above to execute a live JSON-RPC 2.0 call…</pre>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <span class="panel-title">Cursor / Claude MCP Configuration</span>
+          <a href="/llms.txt" class="btn btn-sm">llms.txt ↗</a>
+        </div>
+        <div class="panel-body">
+          <p style="color:var(--muted);font-size:13px;margin-bottom:10px">Add to <code>.cursor/mcp.json</code> or Claude Desktop config:</p>
+          <pre class="codeblock">{
+  "mcpServers": {
+    "hardwire-robinhood": {
+      "url": "https://hardwireagent.com/mcp"
+    }
+  }
+}</pre>
+          <p style="color:var(--muted);font-size:13px;margin:14px 0 10px">Direct JSON-RPC test via cURL:</p>
+          <pre class="codeblock">curl -X POST https://hardwireagent.com/mcp \
+  -H "content-type: application/json" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'</pre>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>HARDWIRE · Non-custodial AI Copilot, MCP Gateway &amp; Direct Curve/V4 Router on Robinhood Chain (4663). Keys never leave your wallet.</div>
+      <div style="display:flex;gap:16px;font-family:var(--mono)">
+        <a href="https://github.com/Hardwire-Agents/hardwire" target="_blank" rel="noopener">GitHub</a>
+        <a href="/llms.txt">llms.txt</a>
+        <a href="/openapi.json">openapi.json</a>
+        <a href="/mcp">MCP</a>
+        <a href="https://x.com/hardwireagent" target="_blank" rel="noopener">@hardwireagent</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "hardwire",
+  "version": "1.0.0",
+  "description": "HARDWIRE: Non-custodial AI execution copilot, Curve X-Ray & Remote MCP direct router on Robinhood Chain (4663).",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hardwire-Agents/hardwire.git"
+  },
+  "homepage": "https://hardwireagent.com",
+  "scripts": {
+    "build": "node build.mjs",
+    "compile": "node contracts/compile.mjs",
+    "test:contracts": "node contracts/test.mjs",
+    "test:api": "node worker/test-api.mjs"
+  },
+  "devDependencies": {
+    "solc": "^0.8.24",
+    "viem": "^2.21.0",
+    "wrangler": "^4.0.0"
+  }
+}

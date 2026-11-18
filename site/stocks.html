@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>24/7 Tokenized Equities Directory — HARDWIRE (Chain 4663)</title>
+  <meta name="description" content="Search all 203 24/7 Robinhood Chain ERC-20 stock tokens resolved by 9-character CUSIP with live US session clock." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="24/7 Tokenized Equities Directory — HARDWIRE (Chain 4663)" />
+  <meta property="og:description" content="Search all 203 24/7 Robinhood Chain ERC-20 stock tokens resolved by 9-character CUSIP with live US session clock." />
+  <meta property="og:url" content="https://hardwireagent.com/" />
+  <meta property="og:image" content="https://hardwireagent.com/og-card.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@hardwireagent" />
+  <meta name="twitter:title" content="24/7 Tokenized Equities Directory — HARDWIRE (Chain 4663)" />
+  <meta name="twitter:description" content="Search all 203 24/7 Robinhood Chain ERC-20 stock tokens resolved by 9-character CUSIP with live US session clock." />
+  <meta name="twitter:image" content="https://hardwireagent.com/og-card.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="/" class="brand">
+        <img src="/mark.svg" alt="HARDWIRE" />
+        <span>HARDWIRE</span>
+        <span class="brand-tag">CHAIN 4663</span>
+      </a>
+      <nav class="nav">
+        <a href="/" class="">Copilot & Router</a>
+        <a href="/xray.html" class="">Curve X-Ray</a>
+        <a href="/stocks.html" class="active">24/7 Equities</a>
+        <a href="/agents.html" class="">MCP & Agents</a>
+        <a href="/furnace.html" class="">Zero-Fee & Furnace</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="ca-pill" id="caPill" data-copy="">ANNOUNCING ON @HARDWIREAGENT</span>
+        <button class="btn btn-primary" id="connectBtn">Connect Wallet</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker-bar">
+    <div class="ticker-bar-inner">
+      <div><span class="dot-live"></span><span id="barSession">Robinhood Chain (4663) · ~100ms Blocks · Direct Curve + V4 Execution</span></div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap">
+        <span id="barEth">ETH —</span>
+        <span id="barFee" style="color:var(--green)">Router Fee: 0.00% (vs 1.00% Bot Routers)</span>
+        <a href="https://x.com/hardwireagent" target="_blank" rel="noopener" style="color:var(--accent)">@hardwireagent ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>203 Tokenized Equities · <span>24/7 Onchain Wire</span></h1>
+        <p>Traditional US equity brokers freeze at 16:00 ET and all weekend. Every ERC-20 equity token below settles 24/7 on Robinhood Chain (4663) and is indexed inside HARDWIRE Copilot &amp; MCP.</p>
+      </div>
+    </section>
+
+    <div class="panel">
+      <div class="panel-head">
+        <span class="panel-title">Robinhood Chain Equity Catalog</span>
+        <span class="badge badge-cyan" id="stocksCount">203 equities</span>
+      </div>
+      <div class="panel-body" style="border-bottom:1px solid var(--border)">
+        <input type="text" id="stocksSearch" placeholder="Filter by ticker (NVDA, TSLA, AAPL, MSTR, GME), company name, or 9-char CUSIP…" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Company</th>
+              <th>9-Char CUSIP</th>
+              <th>ERC-20 Contract</th>
+              <th>Settlement</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="stocksBody">
+            <tr><td colspan="6">Loading 203 stock tokens…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>HARDWIRE · Non-custodial AI Copilot, MCP Gateway &amp; Direct Curve/V4 Router on Robinhood Chain (4663). Keys never leave your wallet.</div>
+      <div style="display:flex;gap:16px;font-family:var(--mono)">
+        <a href="https://github.com/Hardwire-Agents/hardwire" target="_blank" rel="noopener">GitHub</a>
+        <a href="/llms.txt">llms.txt</a>
+        <a href="/openapi.json">openapi.json</a>
+        <a href="/mcp">MCP</a>
+        <a href="https://x.com/hardwireagent" target="_blank" rel="noopener">@hardwireagent</a>
+      </div>
+    </div>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
