@@ -1,4 +1,6 @@
-# HARDWIRE — AI Execution Copilot & Direct Router on Robinhood Chain
+# HARDWIRE (`$HWIRE`) — AI Execution Copilot & Direct Router on Robinhood Chain
+
+- **`$HWIRE` Contract (Robinhood Chain, 4663):** [`0x0E7112755970b3E99dF6A5D516C6F694fA393310`](https://ponsfamily.com/launchpad/0x0E7112755970b3E99dF6A5D516C6F694fA393310)
 
 Skip the 1.00% bot-router tax. Wire your wallet and AI agent straight to Pons v2 bonding curves and Uniswap v4 pools on Robinhood Chain (`4663`).
 

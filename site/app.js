@@ -1,5 +1,5 @@
 (function () {
-  const EMBEDDED_TOKEN_CA = ""; // Patched atomically by launch.mjs at T=0
+  const EMBEDDED_TOKEN_CA = "0x0E7112755970b3E99dF6A5D516C6F694fA393310"; // Patched atomically by launch.mjs at T=0
   const EMBEDDED_ROUTER_ADDR = "0x88f251df2012e58a6fcdaec69dc3fa2f6310d808"; // Sourcify exact_match on 4663
   const CHAIN_HEX = "0x1237"; // 4663 Robinhood Chain
 

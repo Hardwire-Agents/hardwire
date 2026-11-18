@@ -12,8 +12,8 @@ fs.mkdirSync(SITE, { recursive: true });
 
 const SITE_DOMAIN = "hardwireagent.com";
 const X_HANDLE = "hardwireagent";
-const TOKEN_CA_TEXT = "ANNOUNCING ON @HARDWIREAGENT";
-const TOKEN_LABEL = "HARDWIRE Token";
+const TOKEN_CA_TEXT = "0x0E7112755970b3E99dF6A5D516C6F694fA393310";
+const TOKEN_LABEL = "$HWIRE";
 
 function shell({ active, title, desc, body }) {
   const navItems = [
